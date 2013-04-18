@@ -1,6 +1,13 @@
 Clearance
 =========
 
+Note
+----
+
+This gem is a clone of Clearance 1.0.0.rc4. The only modfication is that the uniquness validation for emails has been removed.
+The Paranoia gem leaves records intact, adding a deleted_at timestamp once a particular record is deleted. The emails of these
+deleted users were still being included in the validations for new users
+
 [![Build Status](https://secure.travis-ci.org/thoughtbot/clearance.png)](http://travis-ci.org/thoughtbot/clearance?branch=master)
 [![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/thoughtbot/clearance)
 
